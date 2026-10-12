@@ -1,0 +1,65 @@
+{
+ "checkpoint": "checkpoints\\unet_r34\\best.pt",
+ "threshold": 0.5,
+ "kvasir_test": {
+  "n_images": 100,
+  "dice_mean": 0.9192514931156007,
+  "dice_ci95": [
+   0.8936787837673325,
+   0.9417653925991425
+  ],
+  "dice_median": 0.9627895809798908,
+  "iou_mean": 0.8680954100333318,
+  "iou_ci95": [
+   0.8353456122039112,
+   0.8981848136262006
+  ],
+  "images_dice_below_0.5": 3,
+  "image_sensitivity": 1.0,
+  "image_sensitivity_ci95": [
+   0.9630051925239981,
+   0.9999999999999999
+  ],
+  "lesion_sensitivity": 0.9313725490196079,
+  "precision": 0.8050847457627118,
+  "fp_per_image": 0.23,
+  "ap50": 0.9070551517502902,
+  "n_gt_polyps": 102,
+  "image_auc_vs_normal_cecum": 0.9577
+ },
+ "cvc_external": {
+  "n_images": 612,
+  "dice_mean": 0.8514108540107417,
+  "dice_ci95": [
+   0.8351717002871741,
+   0.8664009338313078
+  ],
+  "dice_median": 0.924323156658486,
+  "iou_mean": 0.7772061300219438,
+  "iou_ci95": [
+   0.7593379977058752,
+   0.7942070027556014
+  ],
+  "images_dice_below_0.5": 40,
+  "image_sensitivity": 0.9918300653594772,
+  "image_sensitivity_ci95": [
+   0.9810186504093626,
+   0.99650544020095
+  ],
+  "lesion_sensitivity": 0.846749226006192,
+  "precision": 0.8188622754491018,
+  "fp_per_image": 0.1977124183006536,
+  "ap50": 0.8222961904669441,
+  "n_gt_polyps": 646,
+  "image_auc_vs_normal_cecum": 0.9271486928104575
+ },
+ "normal_cecum": {
+  "n_images": 100,
+  "specificity": 0.33,
+  "specificity_ci95": [
+   0.24562983793895452,
+   0.4269483966028862
+  ],
+  "fp_per_image": 0.88
+ }
+}

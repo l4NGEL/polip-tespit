@@ -1,0 +1,22 @@
+[project]
+name = "polip-tespit"
+version = "0.1.0"
+description = "Kolonoskopi goruntulerinde polip segmentasyonu ve tespiti, baska merkezin verisiyle dis test"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.1",
+  "segmentation-models-pytorch==0.5.0",
+  "opencv-python",
+  "numpy",
+  "onnx",
+  "onnxruntime-gpu",
+  "huggingface_hub",
+  "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

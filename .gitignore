@@ -1,0 +1,15 @@
+# Veri setleri (scripts/download_data.py ile indirilir)
+data/
+
+# Model agirliklari ve TensorRT motor onbellegi
+checkpoints/
+
+# Ortam
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# Buyuk ara ciktilar
+results/**/overlays/
+results/*.log
